@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Validación de Formulario con Javascript</title>
+	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<main>
+        <h1 class="titulo"><b class="titulo1">L</b><b class="titulo2">O</b><b class="titulo3">V</b><b class="titulo4">E</b> <b class="titulo5">O</b><b class="titulo6">N</b> <b class="titulo7">T</b><b class="titulo8">O</b><b class="titulo9">U</b><b class="titulo10">R</b></h1>
+        <h3 class="subtitulo">HARRY STYLES</h3>
+        <h5 class="subtitulo2">COMPLETE EL FORMULARIO Y OBTENGA SUS ENTRADAS</h5>
+
+		<form action="" class="formulario" id="formulario">
+			<!-- Grupo: Nombre -->
+			<div class="formulario__grupo" id="grupo__nombre">
+				<label for="nombre" class="formulario__label" id="label1">NOMBRE DEL TITULAR DE LA TARJETA</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="LUZ N. STRICKLER">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El usuario tiene que ser de 4 a 20 dígitos y solo puede contener letras y puntos</p>
+			</div>
+
+			<!-- Grupo: Direccion -->
+			<div class="formulario__grupo" id="grupo__direccion">
+				<label for="direccion" class="formulario__label" id="label2">DIRECCION DE ENVIO</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="direccion" id="direccion" placeholder="CARACAS 42">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">La dirección tiene que ser de 4 a 25 dígitos y solo puede contener letras y numeros</p>
+			</div>
+
+			<!-- Grupo: Numero -->
+			<div class="formulario__grupo" id="grupo__numero">
+				<label for="numero" class="formulario__label" id="label3">NUMERO DE TARJETA</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="numero" id="numero" placeholder="XXXX XXXX XXXX XXXX">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El numero de tarjeta tiene que ser de 16 dígitos y solo puede contener numeros</p>
+			</div>
+            
+
+			<!-- Grupo: Telefono -->
+			<div class="formulario__grupo" id="grupo__telefono">
+				<label for="telefono" class="formulario__label" id="label4">NUMERO DE TELEFONO</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="3541 215491">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El numero de telefono tiene que ser de 10 a 14 digitos y solo puede contener numeros</p>
+			</div>
+            
+
+			<!-- Grupo: Codigo -->
+			<div class="formulario__grupo" id="grupo__codigo">
+				<label for="codigo" class="formulario__label" id="label5">CODIGO DE SEGURIDAD DE LA TARJETA</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="codigo" id="codigo" placeholder="XXX">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El codigo tiene que ser de 3 digitos y solo puede contener numeros.</p>
+			</div>
+
+			<!-- Grupo: Correo Electronico -->
+            <div class="formulario__grupo" id="grupo__correo">
+				<label for="correo" class="formulario__label" id="label6">CORREO ELECTRONICO</label>
+				<div class="formulario__grupo-input">
+					<input type="email" class="formulario__input" name="correo" id="correo" placeholder="LUZSTRICKLER@GMAIL.COM">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+			<!-- Grupo: Terminos y Condiciones -->
+			<div class="formulario__grupo" id="grupo__terminos">
+				<label class="formulario__label">
+					<input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+					Acepto los Terminos y Condiciones
+				</label>
+			</div>
+
+			<div class="formulario__mensaje" id="formulario__mensaje">
+				<p class="rellenar"><i class="fas fa-exclamation-triangle"></i> <b class="error">Error:</b> Por favor rellena el formulario correctamente. </p>
+			</div>
+
+			<div class="formulario__grupo formulario__grupo-btn-enviar">
+				<button type="submit" class="formulario__btn">Enviar</button>
+				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+			</div>
+		</form>
+	</main>
+
+	<script src="js/formulario.js"></script>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</body>
+</html>
