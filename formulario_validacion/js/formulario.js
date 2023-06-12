@@ -6,7 +6,7 @@ const expresiones = {
 	direccion: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
 	numero: /^.{4,20}$/, // 4 a 12 digitos.
 	telefono: /^\d{1,14}$/, // 7 a 14 numeros.
-	codigo: /^\d{0,10}$/,
+	codigo: /^\d{3}$/,
 	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/
 }
 
